@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying out repos in Github</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ball{
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            background-color: red;
+        }
+        .ball:hover{
+            cursor: pointer;
+            animation: bounce 0.9s ease;
+        }
+        @keyframes bounce{
+           0%{
+            transform: translateY(0px);
+           }
+           40%{
+            transform: translateY(-150px);
+           }
+           70%{
+            transform: translateY(0px);
+           }
+           85%{
+            transform: translateY(-30px);
+           }
+           100%{
+            transform: translateY(0px);
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
