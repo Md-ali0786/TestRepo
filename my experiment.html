@@ -1,0 +1,63 @@
+<html><head><title>light on & off</title>
+    <style>
+        #a2{
+         position: relative;
+         left: 500px;
+        }
+        button{
+            position: relative;
+            left: 505px;
+            font-size:large large;
+        }
+        button:hover{
+         position:relative;
+         background-color: aqua;
+         color: red;
+         font-weight: bolder;
+         cursor: pointer;
+        }
+        h1{
+            position: relative;
+            left: 360px;
+        }
+        h2{
+            position: relative;
+            width: 200px;
+            left: 510px;
+        }
+        .h1{
+            position: relative;
+            text-align: center;
+            color: red;
+            border: 2px solid black;
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+<h1>here, is two button for the light on or off.</h1>
+
+<script>
+function light(sw) {
+    var pic;
+    if (sw == 0) {
+        pic = "bulboff.jpg"
+    } else {
+      pic = "bulbon.jpg"
+    }
+    document.getElementById( 'a2' ).src = pic;
+}
+</script>
+<img id="a2" src="bulboff.jpg" width="300" height="300"><br><br>
+<p>
+<button type="button" onclick="light(1)">light on</button>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<button type="button "onclick="light(0)">light off</button>
+</p><br><br>
+<h2 class="h1">THANK YOU |</h2>
+</body>
+</html>
+
+
+        
+
+       
